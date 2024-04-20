@@ -32,8 +32,8 @@ assistant
     --color-body: #f7ece5; /*Cambiar*/
     --color-light-primary: #DDBEA9; /*Cambiar*/
     --color-dark-primary: #CB997E; /*Cambiar*/
-    --color-light-secondary: #bcb8b1; /*Cambiar*/
-    --color-secondary: #8a817c; /*Cambiar*/
+    --color-light-secondary: #857e74; /*Cambiar*/
+    --color-secondary: #685f5a; /*Cambiar*/
     --color-dark-secondary: #463f3a; /*Cambiar*/
 }
 * {
@@ -44,13 +44,12 @@ assistant
 }
 body {
     background-color: var(--color-body);
-    padding: 3%;
+    padding: 1%;
 }
 .logo {
     width: 370px ;
     height: 203px;
     margin: 0 auto;
-    transition: ;
 }
 .logo img {
     width: 100%;
@@ -112,12 +111,24 @@ h1, h2, h3 {
     transform: translate(-50%, -50%);
 
 }
+.esconderMostrar {
+    border: none;
+    background-color: var(--color-body);
+    padding: 0 4%;
+    color: var(--color-secondary);
+}
+.esconderMostrar:hover {
+    cursor: pointer;
+    color: var(--color-dark-secondary);
+}
+#textoOculto {
+    display: none;
+}
 .texto-desc, .texto-extra {
     color: var(--color-secondary);
     width: 100%;
     padding: 0 5%;
     margin: 4% auto;
-
 }
 .texto-desc p, .texto-extra p {
     text-align: justify;
@@ -222,6 +233,9 @@ font-weight: 700;
     color: var(--color-secondary);
     text-decoration: none;
 }
+.dato-cont a:hover {
+    color: var(--color-dark-secondary);
+}
 
 @media only screen and (orientation: portrait ) {
     .titulo {
@@ -231,7 +245,10 @@ font-weight: 700;
 
 @media only screen and (max-width: 900px) {
     * {
-        font-size: 1.9vw;
+        font-size: 2.5vw;
+    }
+    body {
+        padding: 0;
     }
     .menu {
         margin: 4% auto;
@@ -253,11 +270,35 @@ font-weight: 700;
         gap: 3%;
     }
     .serv h4 {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         text-align: center;
         }
     .serv p {
         font-size: 0.8rem;
+    }
+    .prod h3 {
+        font-size: 1.3rem;
+    }
+    .dato-cont {
+        margin-bottom: 4%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    * {
+        font-size: 3.5vw;
+    }
+    section, footer {
+        width: 95%;
+        padding: 0 3%;
+    }
+    h1, h2, h3 {
+        font-size: 2.5rem;
+    }
+    .serv h4 {
+        font-size: 0.6rem;
+        }
+    .serv p {
+        font-size: 0.9rem;
     }
 
 }
