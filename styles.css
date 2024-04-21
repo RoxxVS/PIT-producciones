@@ -292,6 +292,9 @@ font-weight: 700;
     .dato-cont {
         margin-bottom: 4%;
     }
+        .botonModoOscuro {
+        width: 8%;
+    }
 }
 @media only screen and (max-width: 700px) {
     * {
@@ -310,5 +313,9 @@ font-weight: 700;
     .serv p {
         font-size: 0.9rem;
     }
-
+    .botonModoOscuro {
+        width: 12%;
+        top: 3%;
+        right: 3%;
+    }
 }
