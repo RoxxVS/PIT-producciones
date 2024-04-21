@@ -236,7 +236,17 @@ font-weight: 700;
 .dato-cont a:hover {
     color: var(--color-dark-secondary);
 }
-
+.botonModoOscuro {
+    width: 5%;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    opacity: 0.5;
+}
+.botonModoOscuro:hover {
+    cursor: pointer;
+    opacity: 1;
+}
 @media only screen and (orientation: portrait ) {
     .titulo {
         height: 20vh;
