@@ -313,6 +313,9 @@ font-weight: 700;
     .serv p {
         font-size: 0.9rem;
     }
+    .prod h3 {
+        font-size: 1rem;
+    }
     .botonModoOscuro {
         width: 12%;
         top: 3%;
