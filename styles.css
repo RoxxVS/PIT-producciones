@@ -282,6 +282,7 @@ font-weight: 700;
     .serv h4 {
         font-size: 0.7rem;
         text-align: center;
+        line-height: 2.5rem;
         }
     .serv p {
         font-size: 0.8rem;
